@@ -16,38 +16,54 @@ body{
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) ;
     border: 1px, solid, rgba(255, 255, 255, 0.18);
     */
-    background: #000000;
-    width: 75%;
-    
-    box-shadow: #fff;
-
+        background: #000000;
+        backdrop-filter: blur(20px);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        width: 65%;
+        border-radius: 15px;
 }
 #display {
     width: 100%;
     margin-bottom: 10px;
     padding: 15px;
-    font-size: 22px;
+    font-size: 35px;
     font-weight: 900;
-    height: 90px;
+    height: 150px;
     background: transparent;
-    
+    border: none; 
+    color: #fff;
 }
 .buttons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-.column1{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
-    padding: 10px;
-    
-}
-.column1 button{
+button {
     width: 100%;
     padding: 10px;
     text-align: center;
-    border: 1px solid #;
+    background-color: rgba(255, 255, 255, 0.2); 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+button:hover {
+    background-color: rgba(255, 255, 255, 0.3); 
+    border-color: rgba(255, 255, 255, 0.5);
+}
+.column1, .column3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    padding: 20px;  
+}
+.column1 button{
+    width: 70%;
+    text-align: center;
     background-color: transparent;
     cursor: pointer;
     color: #fff;
@@ -55,30 +71,21 @@ body{
 .column2{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 .column2 button{
-    width: 100%;
-    padding: 10px;
+    width: 90%;
     text-align: center;
-    background-color: transparent;
     cursor: pointer;
-    border: 1px solid #;
     color: #fff;
-    font-weight: 700;
-    font-size: 18px; 
+    font-weight: 700; 
 }
-.column3 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
-    padding: 10px;
-}
+
 .column3 button {
-    width: 100%;
+    width: 80%;
     text-align: center;
     background-color: transparent;
-    border: 1px solid #;
     color: #fff;
     cursor: pointer;
 }

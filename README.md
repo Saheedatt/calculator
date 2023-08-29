@@ -26,11 +26,14 @@ This is a simple calculator project created using HTML, CSS, and JavaScript. The
 
 If you want to see a live demo of the calculator, you can visit [Demo Link](https://saheedatt.github.io/calculator/).
 
-## Screenshots
+## Screenshot
 
 ![Calculator Screenshot](calculator.png)
 
 ## Known Issues
 
-- I was unable to get the inverse of the trigonometry functions to work.
+- I was unable to get the inverse of the trigonometry functions to work.(It works better now)
 
+
+## Improvements made
+- I tried to create functions for every part of it to refactor the code and improve reusability.
